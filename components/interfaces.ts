@@ -9,3 +9,8 @@ export interface ButtonInterface {
 export interface CheckboxInterface {
   children: any;
 }
+
+export interface TextFieldInterface {
+  name: string;
+  placeholder: string;
+}
