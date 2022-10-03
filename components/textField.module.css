@@ -1,0 +1,45 @@
+.wrapper {
+  position: relative;
+  width: 90%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--medium-grey);
+  letter-spacing: 0.4px;
+}
+
+.input {
+  padding: 0.75rem;
+  display: block;
+  width: 100%;
+  background: var(--white);
+  border: 1px solid rgba(130, 143, 163, 0.25);
+  border-radius: 6px;
+}
+
+.input:focus,
+.input:active {
+  outline: 0;
+}
+
+.input::placeholder {
+  font-size: 0.8125rem;
+}
+
+.input[data-error='true'] {
+  border-color: var(--red);
+}
+
+.errorMessage {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  color: var(--red);
+}

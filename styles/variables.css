@@ -17,6 +17,7 @@
   --sidebar-background: var(--white);
   --secondary-background: rgba(99, 95, 199, 10%);
   --secondary-background-hover: rgba(99, 95, 199, 25%);
+  --checkbox-background-hover: rgba(99, 95, 199, 25%);
 }
 
 [data-theme='dark'] {
