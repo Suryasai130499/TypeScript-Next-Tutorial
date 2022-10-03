@@ -1,0 +1,25 @@
+:root {
+  --black: rgb(0, 1, 18);
+  --very-dark-grey: rgb(32, 33, 44);
+  --dark-grey: rgb(43, 44, 55);
+  --lines-dark: rgb(62, 63, 78);
+  --medium-grey: rgb(130, 143, 163);
+  --lines-light: rgb(228, 235, 250);
+  --light-grey: rgb(244, 247, 253);
+  --white: rgb(255, 255, 255);
+  --red: rgb(234, 85, 85);
+  --red-hover: rgb(255, 152, 152);
+  --purple: rgb(99, 95, 199);
+  --purple-hover: rgb(168, 164, 255);
+  --checkbox-border: rgba(130, 143, 163, 25%);
+
+  --background: var(--light-grey);
+  --sidebar-background: var(--white);
+  --secondary-background: rgba(99, 95, 199, 10%);
+  --secondary-background-hover: rgba(99, 95, 199, 25%);
+}
+
+[data-theme='dark'] {
+  --background: var(--very-dark-grey);
+  --sidebar-background: var(--dark-grey);
+}

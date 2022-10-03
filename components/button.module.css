@@ -1,0 +1,36 @@
+.button {
+  display: inline-block;
+  font-weight: 700;
+  border-radius: 100vmax;
+  cursor: pointer;
+}
+
+.button[data-type='primary'] {
+  background-color: var(--purple);
+  color: var(--white);
+}
+
+.button[data-type='primary']:hover,
+.button[data-type='primary']:focus {
+  background-color: var(--purple-hover);
+}
+
+.button[data-type='secondary'] {
+  color: var(--purple);
+  background-color: var(--secondary-background);
+}
+
+.button[data-type='secondary']:hover,
+.button[data-type='secondary']:focus {
+  background-color: var(--secondary-background-hover);
+}
+
+.button[data-type='destructive'] {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.button[data-type='destructive']:hover,
+.button[data-type='destructive']:focus {
+  background-color: var(--red-hover);
+}

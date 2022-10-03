@@ -13,6 +13,7 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* Sections
@@ -168,6 +169,16 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  outline: 0;
 }
 
 /**
@@ -350,4 +361,12 @@ template {
 
 [hidden] {
   display: none;
+}
+
+input[type='checkbox'] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }

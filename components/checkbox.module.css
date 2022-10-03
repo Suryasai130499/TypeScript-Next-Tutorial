@@ -1,0 +1,71 @@
+.wrapper {
+  width: 90%;
+  margin-inline: auto;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--light-grey);
+  border-radius: 6px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--white);
+  border: 1px solid var(--checkbox-border);
+  border-radius: 2px;
+  translate: 0 -50%;
+}
+
+.content {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--purple);
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 50%;
+  top: 50%;
+  width: 0.3rem;
+  height: 0.6rem;
+  border: solid var(--white);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  translate: -50% -60%;
+}
