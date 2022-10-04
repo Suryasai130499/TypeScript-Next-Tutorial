@@ -1,8 +1,8 @@
 import type { NextPage } from 'next';
-import TextField from '../components/noTitleField';
+import Dropdown from '../components/dropdown';
 
 const Test: NextPage = () => {
-  return <TextField name="Title" placeholder="e.g. Take coffee break" />;
+  return <Dropdown />;
 };
 
 export default Test;
