@@ -1,16 +1,16 @@
 import type { NextPage } from 'next';
 import { MouseEventHandler, useRef, useState } from 'react';
-import styles from './checkbox.module.css';
+import styles from './componentCSS/checkbox.module.css';
 import * as interfaces from './interfaces';
 
-const Checkbox: NextPage<interfaces.CheckboxInterface> = ({ children }) => {
+const Checkbox: NextPage<interfaces.CheckboxInterface> = ({ item }) => {
   const [checked, setChecked] = useState(false);
   const Input = useRef<HTMLInputElement>(null);
 
   return (
     <div className={styles.wrapper}>
       <label className={styles.container}>
-        <p className={`${checked ? styles.content : ''}`}>{children}</p>
+        <p className={`${checked ? styles.content : ''}`}>{item}</p>
         <input
           onChange={() => setChecked(!checked)}
           ref={Input}

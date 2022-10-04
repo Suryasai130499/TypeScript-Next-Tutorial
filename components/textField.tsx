@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { useState } from 'react';
-import styles from './textField.module.css';
+import styles from './componentCSS/textField.module.css';
 import { TextFieldInterface } from './interfaces';
 
 const TextField: NextPage<TextFieldInterface> = ({ name, placeholder }) => {

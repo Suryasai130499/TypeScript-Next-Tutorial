@@ -7,7 +7,7 @@ export interface ButtonInterface {
 }
 
 export interface CheckboxInterface {
-  children: any;
+  item: string;
 }
 
 export interface TextFieldInterface {

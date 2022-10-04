@@ -11,16 +11,32 @@
   --red-hover: rgb(255, 152, 152);
   --purple: rgb(99, 95, 199);
   --purple-hover: rgb(168, 164, 255);
-  --checkbox-border: rgba(130, 143, 163, 25%);
 
-  --background: var(--light-grey);
-  --sidebar-background: var(--white);
+  --background: var(--white);
+  --text-color: var(--black);
+  --title-color: var(--medium-grey);
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --checkbox-background: var(--light-grey);
+  --checkbox-color: var(--white);
+  --checkbox-border: rgba(130, 143, 163, 25%);
+  --textfield-background: var(--white);
+  --placeholder-color: rgba(0, 1, 18, 0.25);
   --secondary-background: rgba(99, 95, 199, 10%);
   --secondary-background-hover: rgba(99, 95, 199, 25%);
   --checkbox-background-hover: rgba(99, 95, 199, 25%);
+  --sidebar-background: var(--white);
 }
 
 [data-theme='dark'] {
   --background: var(--very-dark-grey);
   --sidebar-background: var(--dark-grey);
+  --text-color: var(--white);
+  --title-color: var(--white);
+  --box-shadow-color: rgba(255, 255, 255, 0.2);
+  --checkbox-background: var(--very-dark-grey);
+  --checkbox-color: rgba(130, 143, 163, 0.25);
+  --textfield-background: var(--checkbox-color);
+  --placeholder-color: rgba(255, 255, 255, 0.25);
+  --secondary-background: var(--white);
+  --secondary-background-hover: var(--white);
 }
