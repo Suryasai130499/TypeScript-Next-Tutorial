@@ -14,3 +14,7 @@ export interface TextFieldInterface {
   name: string;
   placeholder: string;
 }
+
+export interface DropdownInterface {
+  listItems: string[];
+}
