@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import * as interfaces from './interfaces';
-import styles from './button.module.css';
+import styles from './componentCSS/button.module.css';
 
 const Button: NextPage<interfaces.ButtonInterface> = ({
   paddingBlock = '0.75rem',

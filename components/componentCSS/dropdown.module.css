@@ -30,14 +30,14 @@
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.25px;
-  color: var(--medium-grey);
+  color: var(--title-color);
   margin-block: 0;
 }
 
 .currentColumn {
   margin-block: 0;
   font-size: 0.8125rem;
-  color: var(--black);
+  color: var(--text-color);
 }
 
 .caret {
@@ -64,9 +64,9 @@
   visibility: hidden;
   list-style: none;
   padding-inline-start: 0;
-  background: var(--white);
+  background: var(--background);
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px var(--box-shadow-color);
   /* animation: slide-down 0.5s linear; */
   scale: 100% 0;
   transform-origin: top;
@@ -84,15 +84,4 @@
   color: var(--medium-grey);
   font-weight: 500;
   font-size: 0.8125rem;
-}
-
-@keyframes slide-down {
-  0% {
-    visibility: visible;
-    height: auto;
-    scale: 100% 0;
-  }
-  100% {
-    scale: 100% 100%;
-  }
 }

@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import { useRef } from 'react';
-import styles from './dropdown.module.css';
+import styles from './componentCSS/dropdown.module.css';
 import { DropdownInterface } from './interfaces';
 
 const Dropdown: NextPage<DropdownInterface> = ({
@@ -22,9 +22,9 @@ const Dropdown: NextPage<DropdownInterface> = ({
 
   return (
     <div className={styles.dropdownWrapper}>
-      <div onClick={rotateCaret} className={styles.wrapper}>
+      <div className={styles.wrapper}>
         <p className={styles.title}>Dropdown</p>
-        <div className={styles.flex}>
+        <div onClick={rotateCaret} className={styles.flex}>
           <p className={styles.currentColumn}>Doing</p>
           <span ref={dropdown} className={`${styles.caret} ${styles.down}`} />
         </div>
