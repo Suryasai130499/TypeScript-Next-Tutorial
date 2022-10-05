@@ -1,0 +1,14 @@
+.navbar {
+  width: 15vw;
+  height: 90vh;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  background-color: var(--sidebar-background);
+  /* transform: translateX(-100%); */
+  transition: transform 500ms ease;
+}
+
+.navbar.show {
+  transform: translate(0);
+}

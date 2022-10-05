@@ -12,7 +12,7 @@
   --purple: rgb(99, 95, 199);
   --purple-hover: rgb(168, 164, 255);
 
-  --background: var(--white);
+  --background: var(--light-grey);
   --text-color: var(--black);
   --title-color: var(--medium-grey);
   --box-shadow-color: rgba(0, 0, 0, 0.2);
