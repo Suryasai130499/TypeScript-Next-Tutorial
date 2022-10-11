@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
-import Sidebar from '../components/sidebar';
+// import Sidebar from '../components/sidebar';
+import Dropdown from '../components/dropdown';
 import { useTheme } from 'next-themes';
 
 const Test: NextPage = () => {
@@ -10,7 +11,7 @@ const Test: NextPage = () => {
     else setTheme('light');
   };
 
-  return <Sidebar />;
+  return <Dropdown />;
 };
 
 export default Test;

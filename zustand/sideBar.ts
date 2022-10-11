@@ -1,11 +1,11 @@
 import create, { StoreApi, UseBoundStore } from 'zustand';
-import { SidebarInterface } from './interfaces';
+import { SidebarInterface, board } from './interfaces';
 
 const useSidebarStore: UseBoundStore<StoreApi<SidebarInterface>> = create(
   (set) => ({
-    boards: ['Platform Launch', 'Marketing Plan', 'Roadmap'],
+    boards: [],
     activeBoard: '',
-    setBoards: (items: string[]) =>
+    setBoards: (items: board[]) =>
       set((state) => ({
         ...state,
         boards: items,

@@ -84,4 +84,5 @@
   color: var(--medium-grey);
   font-weight: 500;
   font-size: 0.8125rem;
+  cursor: pointer;
 }

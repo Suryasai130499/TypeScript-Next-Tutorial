@@ -16,5 +16,5 @@ export interface TextFieldInterface {
 }
 
 export interface DropdownInterface {
-  listItems: string[];
+  listItems?: string[];
 }
