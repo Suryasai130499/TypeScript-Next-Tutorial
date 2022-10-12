@@ -10,6 +10,10 @@
   color: var(--white);
 }
 
+.button[data-type='primary'].button[data-disabled='true'] {
+  opacity: 0.25;
+}
+
 .button[data-type='primary']:hover,
 .button[data-type='primary']:focus {
   background-color: var(--purple-hover);

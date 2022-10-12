@@ -45,7 +45,15 @@ const Sidebar: NextPage = () => {
             <ul className={styles.list}>
               {boards.map((board, index) => {
                 return (
-                  <div key={`${index}+${board.name}`} className={styles.item}>
+                  <a
+                    key={`${index}+${board.name}`}
+                    className={`${styles.item} ${
+                      activeBoard === board.name ? styles.current : ''
+                    }`}
+                    onClick={() => setActiveBoard(board.name)}
+                    // href={`/board/${board._id}`}
+                    href="#"
+                  >
                     <svg
                       className={styles.icon}
                       width="16"
@@ -63,7 +71,7 @@ const Sidebar: NextPage = () => {
                       />
                     </svg>
                     <li className={styles.listItem}>{board.name}</li>
-                  </div>
+                  </a>
                 );
               })}
               <div className={`${styles.item} ${styles.create}`}>

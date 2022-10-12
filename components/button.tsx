@@ -8,6 +8,7 @@ const Button: NextPage<interfaces.ButtonInterface> = ({
   fontSize = '0.8125rem',
   children,
   type,
+  disabled = 'false',
 }) => {
   return (
     <section
@@ -18,6 +19,7 @@ const Button: NextPage<interfaces.ButtonInterface> = ({
         fontSize: fontSize,
       }}
       data-type={type}
+      data-disabled={disabled}
     >
       {children}
     </section>
