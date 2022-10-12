@@ -17,7 +17,7 @@ const Header: NextPage<HeaderInterface> = ({ boardData }) => {
         <h1 className={styles.text}>kanban</h1>
       </div>
       <div className={styles.secondPart}>
-        <h2 className={styles.title}>{activeBoard}</h2>
+        <h2 className={styles.title}>{activeBoard.name}</h2>
         <div className={styles.lastpart}>
           <Button
             type="primary"

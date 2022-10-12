@@ -1,15 +1,14 @@
 export interface board {
   _id: string;
-  id: string;
   name: string;
   columns: string[];
   __v: number;
 }
 export interface SidebarInterface {
   boards: board[];
-  activeBoard: string;
+  activeBoard: board;
   setBoards: (items: board[]) => void;
-  setActiveBoard: (item: string) => void;
+  setActiveBoard: (item: board) => void;
 }
 
 export interface DropdownInterface {

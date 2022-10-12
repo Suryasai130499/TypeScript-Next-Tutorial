@@ -33,7 +33,6 @@ const Sidebar: NextPage = () => {
 
   const boards = useSidebarStore((state) => state.boards);
   const activeBoard = useSidebarStore((state) => state.activeBoard);
-  const setBoards = useSidebarStore((state) => state.setBoards);
   const setActiveBoard = useSidebarStore((state) => state.setActiveBoard);
 
   return (
@@ -48,10 +47,9 @@ const Sidebar: NextPage = () => {
                   <a
                     key={`${index}+${board.name}`}
                     className={`${styles.item} ${
-                      activeBoard === board.name ? styles.current : ''
+                      activeBoard._id === board._id ? styles.current : ''
                     }`}
-                    onClick={() => setActiveBoard(board.name)}
-                    // href={`/board/${board._id}`}
+                    onClick={() => setActiveBoard(board)}
                     href="#"
                   >
                     <svg
