@@ -7,6 +7,7 @@ export interface ButtonInterface {
   children: any;
   type: string;
   disabled?: string;
+  onClick?: () => void;
 }
 
 export interface CheckboxInterface {

@@ -9,6 +9,7 @@ const Button: NextPage<interfaces.ButtonInterface> = ({
   children,
   type,
   disabled = 'false',
+  onClick,
 }) => {
   return (
     <section
@@ -20,6 +21,7 @@ const Button: NextPage<interfaces.ButtonInterface> = ({
       }}
       data-type={type}
       data-disabled={disabled}
+      onClick={onClick}
     >
       {children}
     </section>

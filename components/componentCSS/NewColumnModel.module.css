@@ -25,6 +25,10 @@
   margin-top: 1.5rem;
 }
 
+.textField:nth-child(n) {
+  margin-block: 1rem;
+}
+
 .textField {
   display: flex;
   width: 90%;
